@@ -1,0 +1,13 @@
+.legend {
+  align: 'right';
+  layout: 'vertical';
+  verticalalign: 'middle';
+}
+
+@media screen and (max-width: 767px) {
+  .legend {
+    align: 'right';
+    layout: 'horizontal';
+    verticalalign: 'middle';
+  }
+}
