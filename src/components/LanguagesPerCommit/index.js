@@ -12,8 +12,8 @@ export default function LanguagesPerCommit(props) {
         cx={200}
         cy={200}
         labelLine={false}
-        innerRadius={100}
-        outerRadius="outer"
+        innerRadius={80}
+        outerRadius={140}
         fill="#8884d8"
         dataKey="commits"
       >
@@ -21,7 +21,7 @@ export default function LanguagesPerCommit(props) {
           <Cell key="name" fill={COLORS[index % COLORS.length]} />
         ))}
       </Pie>
-      <Legend align="right" layout="vertical" verticalAlign="middle" />
+      <Legend align="center" layout="horizontal" verticalAlign="bottom" />
     </PieChart>
   )
 }

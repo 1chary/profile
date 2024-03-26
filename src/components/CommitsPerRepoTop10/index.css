@@ -1,25 +1,17 @@
 .commitsPer10 {
-  width: 245px;
-  height: 245px;
+  width: 100%;
+  min-height: 245px;
+  border: 1px solid yellow;
+}
+
+.style {
+  margin-top: 15px;
+  border: 1px solid yellow;
 }
 
 @media screen and (min-width: 768px) {
   .commitsPer10 {
-    width: 369px;
     height: 369px;
-  }
-}
-
-.legend {
-  align: 'right';
-  layout: 'vertical';
-  verticalalign: 'middle';
-}
-
-@media screen and (max-width: 767px) {
-  .legend {
-    align: 'right';
-    layout: 'horizontal';
-    verticalalign: 'middle';
+    width: 50%;
   }
 }

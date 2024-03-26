@@ -28,7 +28,7 @@ class Repository extends Component {
   renderRepoPage = async () => {
     this.setState({apiStatus: apiConstants.loading})
     const {username} = this.props
-    const repoUrl = `https://apis2.ccbp.in/gpv/repos/${username}?api_key=`
+    const repoUrl = `https://apis2.ccbp.in/gpv/repos/${username}?`
     try {
       const response = await fetch(repoUrl)
       if (response.ok) {

@@ -7,25 +7,32 @@ export default function CommitsPerRepoTop10(props) {
   const {repoCommitCountConvertedData} = props
 
   return (
-    <ResponsiveContainer className="commitsPer10">
-      <PieChart>
-        <Pie
-          data={repoCommitCountConvertedData}
-          cx={200}
-          cy={200}
-          labelLine={false}
-          innerRadius={70}
-          outerRadius={150}
-          fill="#8884d8"
-          dataKey="commits"
-        >
-          {repoCommitCountConvertedData.map((entry, index) => (
-            <Cell key="name" fill={COLORS[index % COLORS.length]} />
-          ))}
-        </Pie>
+    <div className="commitsPer10">
+      <ResponsiveContainer>
+        <PieChart>
+          <Pie
+            data={repoCommitCountConvertedData}
+            cx={200}
+            cy={200}
+            labelLine={false}
+            innerRadius={70}
+            outerRadius={120}
+            fill="#8884d8"
+            dataKey="commits"
+          >
+            {repoCommitCountConvertedData.map((entry, index) => (
+              <Cell key="name" fill={COLORS[index % COLORS.length]} />
+            ))}
+          </Pie>
 
-        <Legend className="legend" />
-      </PieChart>
-    </ResponsiveContainer>
+          <Legend
+            align="right"
+            layout="horizontal"
+            verticalAlign="bottom"
+            className="style"
+          />
+        </PieChart>
+      </ResponsiveContainer>
+    </div>
   )
 }

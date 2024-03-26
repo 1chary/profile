@@ -1,25 +1,11 @@
-.height {
+.lineChartContainer {
   width: 1140px;
   height: 363px;
 }
 
 @media screen and (max-width: 767px) {
-  .height {
+  .lineChartContainer {
     width: 312px;
     height: 253px;
   }
-}
-
-.lineChartContainer {
-  height: 343px;
-  width: 1140px;
-}
-@media screen and (max-width: 767px) {
-  .lineChartContainer {
-    width: 312px;
-  }
-}
-
-.width {
-  height: 1140px;
 }

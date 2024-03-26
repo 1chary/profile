@@ -14,8 +14,8 @@ export default function LanguagesPerRepo(props) {
         cx={200}
         cy={200}
         labelLine={false}
-        innerRadius={100}
-        outerRadius="outer"
+        innerRadius={80}
+        outerRadius={140}
         fill="#8884d8"
         dataKey="commits"
       >
@@ -23,7 +23,7 @@ export default function LanguagesPerRepo(props) {
           <Cell key="name" fill={COLORS[index % COLORS.length]} />
         ))}
       </Pie>
-      <Legend className="legend" />
+      <Legend align="center" layout="horizontal" verticalAlign="bottom" />
     </PieChart>
   )
 }
